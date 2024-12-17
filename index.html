@@ -1,139 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人介绍</title>
+    <title>高端个人介绍</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, h1, p {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
         }
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: auto;
-            overflow: hidden;
+            padding: 20px;
         }
         header {
-            background: #50b3a2;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            text-align: center;
+            padding: 50px 0;
         }
-        header a {
-            color: #ffffff;
+        header h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #fff;
+            font-size: 1.2em;
+        }
+        .profile {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .profile h2 {
+            color: #333;
+        }
+        .profile p {
+            color: #666;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .skill {
+            background: #f7f7f7;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+            flex-basis: calc(33.333% - 10px);
+        }
+        .contact {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: #2575fc;
+            margin-bottom: 10px;
+        }
+        .contact p {
+            margin-bottom: 20px;
+        }
+        .contact a {
+            display: inline-block;
+            background: #2575fc;
+            color: #fff;
+            padding: 10px 20px;
             text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        section#showcase {
-            min-height: 400px;
-            background: url('background.jpg') no-repeat 0 -100px;
-            text-align: center;
-            color: #ffffff;
-        }
-        section#showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        section#showcase p {
-            font-size: 20px;
-        }
-        section#main {
-            padding: 15px;
-            background: white;
-        }
-        section#main .about-me {
-            padding: 0;
-        }
-        section#main .about-me img {
-            float: left;
-            margin: 0 15px 0 0;
-        }
-        section#main .about-me h1 {
-            font-size: 25px;
-            margin-bottom: 10px;
-        }
-        section#main .about-me p {
-            font-size: 18px;
-        }
-        footer {
-            background: #50b3a2;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        .contact a:hover {
+            background: #6a11cb;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>个人介绍</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="#">主页</a></li>
-                    <li><a href="#">关于我</a></li>
-                    <li><a href="#">技能</a></li>
-                    <li><a href="#">联系方式</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <header>
+            <h1>尤斌</h1>
+            <p>前端开发工程师 | 技术爱好者</p>
+        </header>
+        
+        <div class="profile">
+            <img src="C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Fig" alt="个人照片">
+            <h2>关于我</h2>
+            <p>我是一名专注于前端开发的工程师，拥有多年的Web开发经验。我对最新的前端技术和框架充满热情，并且一直致力于提升用户体验。</p>
         </div>
-    </header>
-
-    <section id="showcase">
-        <div class="container">
-            <h1>欢迎来到我的个人网站</h1>
-            <p>这里是关于我的一些信息</p>
+        
+        <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Vue.js</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">数据库管理</div>
         </div>
-    </section>
-
-    <section id="main">
-        <div class="container">
-            <article class="about-me" id="about">
-                <img src="my-photo.jpg" alt="个人照片">
-                <h1>关于我</h1>
-                <p>这里是一段关于我的介绍文字。我的名字是尤斌，我是一名前端开发者，专注于创建美观、响应式的网站。</p>
-            </article>
+        
+        <div class="contact">
+            <h2>联系方式</h2>
+            <p>欢迎通过以下方式联系我：</p>
+            <a href="mailto:zhangsan@example.com">发送邮件</a>
+            <a href="tel:123-456-7890">拨打电话</a>
         </div>
-    </section>
-
-    <footer>
-        <p>版权所有 &copy; 2024 尤斌</p>
-    </footer>
+    </div>
 </body>
 </html>
